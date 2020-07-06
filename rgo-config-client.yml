@@ -8,8 +8,8 @@ server:
   port: 8201
 spring:
   profiles: dev
-    application:
-      name: rgo-config-client
+  application:
+    name: rgo-config-client
 eureka:
   client:
     server-url:
@@ -19,7 +19,7 @@ server:
   port: 8202
 spring:
   profiles: test
-    application:
+  application:
     name: rgo-config-client
 eureka:
   client:
