@@ -6,22 +6,22 @@ spring:
 ---
 server:
   port: 8201
-spring：
+spring:
   profiles: dev
     application:
       name: rgo-config-client
 eureka:
   client:
     server-url:
-      defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
+      defaultZone: http://eureka-dev.com:5122/eureka/
 ---
 server:
   port: 8202
-spring：
+spring:
   profiles: test
     application:
     name: rgo-config-client
 eureka:
   client:
     server-url:
-      defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
+      defaultZone: http://eureka-test.com:5122/eureka/
