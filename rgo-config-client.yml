@@ -1,26 +1,27 @@
-﻿spring:
-    profiles:
-        active:
-        - dev
+﻿
+spring:
+  profiles:
+    active:
+      - dev
 ---
 server:
-    port: 8201
+  port: 8201
 spring：
-    profiles: dev
+  profiles: dev
     application:
-        name: rgo-config-client
+      name: rgo-config-client
 eureka:
-    client:
-        server-url:
-            defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
+  client:
+    server-url:
+      defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
 ---
 server:
-    port: 8202
+  port: 8202
 spring：
-    profiles: test
+  profiles: test
     application:
-        name: rgo-config-client
+    name: rgo-config-client
 eureka:
-    client:
-        server-url:
-            defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
+  client:
+    server-url:
+      defaultZone: http://eureka5122:5122/eureka/,http://eureka5121:5121/eureka/
